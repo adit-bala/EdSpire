@@ -10,7 +10,6 @@ style: |
         font-size: .6em;
   }
 paginate: true
-footer: "Slides by Aditya Balasubramanian"
 ---
 
 <!--
@@ -138,8 +137,8 @@ _class: lead invert
 - What are some other scenarios we use Linear Regression for?
     * Predict how a student’s SAT score rises with hours-studied
 - What are some problems with this?
-    *  can only catch linear trends (TODO, add example where it fails)
-- ![](img/linear-regression.png)
+    *  can only catch linear trends, not something like stock prices
+![width:400px](../img/linear-regression.png)
 
 
 ---
@@ -159,7 +158,7 @@ _class: lead invert
     * Group TikTok users into “music-lovers”, “gamers”, “sports fans”
 - What are some problems with this?
     *  need to guess `k`, sensitive to outliers
-- ![](img/k-means-clustering.png)
+ ![width:400px](../img/k-means-clustering.png)
 
 ---
 
@@ -177,7 +176,7 @@ _class: lead invert
     * Email spam filters (spam or not spam)
 - What are some problems with this?
     * Too simple for complex decisions (can't handle "it depends" situations)
-- ![](img/perceptron.png)
+ ![width:400px](../img/perceptron.jpg)
 
 ---
 
@@ -218,7 +217,7 @@ _class: lead invert
 - What are some problems with this?
     * Needs thousands of example photos to learn properly
     * Uses so much computing power it can heat up your laptop!
-- ![](img/alexnet.png)
+- ![width:300px](img/alexnet.png)
 
 ---
 
@@ -300,8 +299,8 @@ _class: default invert
 # Recent Developments
 
 * Model Compression (DeepSeek)
-* 
-* Scalability
+* Multimodality
+* Agents
 
 
 ---
