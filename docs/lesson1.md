@@ -14,7 +14,7 @@ paginate: true
 
 <!--
 _paginate: false
-_footer: Slides available at [`teaching.aditbala.com`](https://teaching.aditbala.com)
+_footer: Slides available at https://edspire.aditbala.com/docs/lesson1 
 _class: lead invert
 -->
 
@@ -28,7 +28,6 @@ Aditya Balasubramanian and Saurav Suresh
 
 <!-- 
 _class: invert
-_footer: 8/27/22
 _backgroundColor: #2222
 -->
 
@@ -131,9 +130,10 @@ _class: lead invert
 
 
 - What is it?
-    - `y = ax + b`
+    * `y = ax + b`
 - Purpose?
-    - originally created to predict comet orbits accurately (TODO)
+    * model relationships between dependent and independent variables
+    * use Mean Squared Error (MSE) to minimize error
 - What are some other scenarios we use Linear Regression for?
     * Predict how a student’s SAT score rises with hours-studied
 - What are some problems with this?
@@ -151,11 +151,12 @@ _class: lead invert
 ## 1950s: K-Means Clustering
 
 - What is it?
-    - group data points into clusters
+    * group data points into clusters
 - Purpose?
-    - simple fast way to group data points
+    * simple fast way to group data points
 - What are some other scenarios we use K-Means Clustering for?
     * Group TikTok users into “music-lovers”, “gamers”, “sports fans”
+
 - What are some problems with this?
     *  need to guess `k`, sensitive to outliers
  ![width:400px](../img/k-means-clustering.png)
@@ -169,9 +170,9 @@ _class: lead invert
 ## 1950s: Perceptron
 
 - What is it?
-    - Mathematical model that takes inputs and outputs either 1 ("yes") or 0 ("no")
+    * Mathematical model that takes inputs and outputs either 1 ("yes") or 0 ("no")
 - Purpose?
-    - First step toward building artificial "brains"
+    * First step toward building artificial "brains"
 - What are some scenarios we use Perceptrons for?
     * Email spam filters (spam or not spam)
 - What are some problems with this?
@@ -187,17 +188,15 @@ _class: lead invert
 ## 1980s: Back-propagation
 
 - What is it?
-    - Teaching a computer by showing it what mistakes it made
+    * Teaching a computer by showing it what mistakes it made
 - Purpose?
-    - Helps computers learn from their errors and get better over time
+    * Helps computers learn from their errors and get better over time
 - What are some scenarios we use Back-propagation for?
-    * Voice assistants understanding your commands
+    * Handwritten Digit Recognition (MNIST)
     * Netflix recommending shows you might like
 - What are some problems with this?
     * Sometimes "forgets" earlier lessons when learning new things
     * Needs powerful computers and lots of examples to work well
-- ![](img/backpropagation.png)
-
 ---
 
 <!--
@@ -207,17 +206,16 @@ _class: lead invert
 ## 2012: AlexNet
 
 - What is it?
-    - A super-powered computer system that can recognize what's in pictures
+    * A super-powered computer system that can recognize what's in pictures
 - Purpose?
-    - To teach computers to "see" and understand images like humans do
+    * To teach computers to "see" and understand images like humans do
+    * Learn's iamge features
 - What are some scenarios we use AlexNet for?
-    * Snapchat filters that know where your face is
-    * Self-driving cars identifying pedestrians and stop signs
+    * Image Classification (CIFAR, ImageNet)
     * Medical apps that can spot diseases in X-rays
 - What are some problems with this?
     * Needs thousands of example photos to learn properly
     * Uses so much computing power it can heat up your laptop!
-- ![width:300px](img/alexnet.png)
 
 ---
 
@@ -361,6 +359,7 @@ _class: default invert
 - Model Compression (i.e., DeepSeek distilled models)
 - Multimodality
 - Agents
+
 ![width:400px](../img/deepseek-img.jpg)
 
 ---
