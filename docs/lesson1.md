@@ -262,6 +262,7 @@ _class: default invert
 - cat -> [0, 1, 0]
 - dog -> [0, 0, 1]
 - Issues: arbitrary, not context aware, only word level, problems in higher dimensional space
+  
 ![width:400px](../img/onehotkey-img.png)
 
 ---
@@ -278,6 +279,7 @@ _class: default invert
 - EX: Predict the missing word: "He twisted his ankle during practice, so he was _____ on his way home."
 - EX: Predict the missing word: "So he was ___ on"
 - Issue: cannot handle long, complex texts
+  
 ![width:400px](../img/cbowmodel_img.png)
 
 ---
@@ -293,6 +295,7 @@ _class: default invert
 - EX: Predict the two missing words given: "____ hungry ____"
 - Performs well on small datasets and better at handling rare words
 - Issues: takes longer to train and similar context issues as CBOW
+  
 ![width:400px](../img/skipgrammodel_img.png)
 
 ---
@@ -308,6 +311,7 @@ _class: default invert
 - Maintains an internal memory over a sequence
 - EX: Predict the missing word: "I am so hungry right ____"
 - Issues: Unidirectional, computationally expensive, struggles with long-term dependencies
+  
 ![width:400px](../img/lstm-img.png)
 
 ---
@@ -338,6 +342,7 @@ _class: default invert
 - Bidirectional
 - Multi-headed self-attention mechanism (can handle long-term dependencies)
 - Parallelizable (computationally cheaper)
+  
 ![width:400px](../img/transformer-img.png)
 
 ---
@@ -350,6 +355,7 @@ _class: default invert
 - Following the success of transformers in various NLP tasks, it is scaled and trained on larger datasets
 - Google's BERT and OpenAI's GPT-2 were early LLMs
 - GPT-3 along with reinforcement learning from human feedback (RLHF) leads to ChatGPT
+  
 ![width:400px](../img/bert-img.png)
 
 
