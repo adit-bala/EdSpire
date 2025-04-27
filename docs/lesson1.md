@@ -321,6 +321,7 @@ _class: default invert
   * Not conversational
   * Limited input size
   * Relatively poor performance
+  
 ![width:400px](../img/word2vec-img.jpeg)
 
 ---
