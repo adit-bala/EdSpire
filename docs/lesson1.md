@@ -241,10 +241,10 @@ _class: default invert
 
 # Early Language Models
 
-* One-Hot Key encoding
-* Skip-Gram models
-* Continuous Bag of Words model
-* LSTM encoder-decoder
+- One-Hot Key encoding
+- Skip-Gram models
+- Continuous Bag of Words model
+- LSTM encoder-decoder
 
 
 ---
@@ -253,14 +253,76 @@ _class: default invert
 _class: default invert
 -->
 
-# Pros/Cons Early Models
+# One-Hot Key Encoding
 
-* Word2Vec: robust vector embeddings for words
-* Issues:
-  * Limited context
-  * Unidirectional
+* Given a set of n words, assigns unique vectors for each word
+* EX: house, cat, dog
+* house -> [1, 0, 0]
+* cat -> [0, 1, 0]
+* dog -> [0, 0, 1]
+* Issues: arbitrary, not context aware, only word level, problems in higher dimensional space
+
+
+---
+
+<!--
+_class: default invert
+-->
+
+# CBOW Model
+
+* Typically uses one-hot key encodings
+* Given context words, predicts the center word
+* EX: Predict the missing word: "I am so hungry ____ now." 
+* EX: Predict the missing word: "He twisted his ankle during practice, so he was _____ on his way home."
+* EX: Predict the missing word: "So he was ___ on"
+* Issue: cannot handle long, complex texts
+
+
+---
+
+<!--
+_class: default invert
+-->
+
+# Skip-Gram Model
+
+* Also commonly uses one-hot key encodings
+* Given a word, predicts the context words
+* EX: Predict the two missing words given: "____ hungry ____"
+* Performs well on small datasets and better at handling rare words
+* Issues: takes longer to train and similar context issues as CBOW
+
+
+---
+
+
+<!--
+_class: default invert
+-->
+
+# Long Short Term Memory Model
+* Uses one-hot key encodings or more advanced embeddings (i.e. Word2Vec)
+* Recurrently handles sequential data
+* Maintains an internal memory over a sequence
+* EX: Predict the missing word: "I am so hungry right ____"
+* Issues: Unidirectional, computationally expensive, struggles with long-term dependencies
+
+
+---
+
+
+<!--
+_class: default invert
+-->
+
+# Successes and Failures of Early LMs
+* Skip-gram and CBOW models used in Word2Vec
+* Google's ELMo uses LSTMs
+* Weak Points:
   * Not conversational
-
+  * Limited input size
+  * Relatively poor performance
 
 ---
 
@@ -269,11 +331,10 @@ _class: default invert
 -->
 
 # Transformers
-
-* Google's BERT
-* Bidirectional: ingests input all at once and considers context before and after each word
-* Context: ingests large number of tokens at once
-* Conversational: later iterations use RL to make the model more conversational (i.e. ChatGPT)
+- Introduced by Vaswani et al. in 2017 in pivotal paper: Attention Is All You Need
+- Bidirectional
+- Multi-headed self-attention mechanism (can handle long-term dependencies)
+- Parallelizable (computationally cheaper)
 
 
 ---
@@ -282,28 +343,25 @@ _class: default invert
 _class: default invert
 -->
 
-# Transformer Architecture
-
-* Self-Attention
-* Parallelism
-* Scalability
+# Large Language Models
+- Following the success of transformers in various NLP tasks, it is scaled and trained on larger datasets
+- Google's BERT and OpenAI's GPT-2 were early LLMs
+- GPT-3 along with reinforcement learning from human feedback (RLHF) leads to ChatGPT
 
 
 ---
-
 
 <!--
 _class: default invert
 -->
 
-# Recent Developments
-
-* Model Compression (DeepSeek)
-* Multimodality
-* Agents
-
+# Exciting Developments
+- Model Compression (i.e., DeepSeek distilled models)
+- Multimodality
+- Agents
 
 ---
+
 
 <!--
 _class: invert
