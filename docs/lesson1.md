@@ -71,7 +71,7 @@ _class: lead invert
 * Hobbies:
   * Weight-lifting, Reading
 
-![bg right](https://i.imgur.com/WNUiTk7.jpg)
+![bg right](../img/ss.jpg)
 
 ---
 
