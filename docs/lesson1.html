@@ -484,7 +484,7 @@ footer {
 <li>LSTM encoder-decoder</li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-marpit-fragments="6" data-class="default invert" data-paginate="true" data-theme="uncover" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="17" data-class="default invert" data-paginate="true" data-theme="uncover" data-style="section {
     font-size: 175%;
 }
 footer {
@@ -499,15 +499,16 @@ footer {
 ;">
 <h1 id="one-hot-key-encoding">One-Hot Key Encoding</h1>
 <ul>
-<li data-marpit-fragment="1">Given a set of n words, assigns unique vectors for each word</li>
-<li data-marpit-fragment="2">EX: house, cat, dog</li>
-<li data-marpit-fragment="3">house -&gt; [1, 0, 0]</li>
-<li data-marpit-fragment="4">cat -&gt; [0, 1, 0]</li>
-<li data-marpit-fragment="5">dog -&gt; [0, 0, 1]</li>
-<li data-marpit-fragment="6">Issues: arbitrary, not context aware, only word level, problems in higher dimensional space</li>
+<li>Given a set of n words, assigns unique vectors for each word</li>
+<li>EX: house, cat, dog</li>
+<li>house -&gt; [1, 0, 0]</li>
+<li>cat -&gt; [0, 1, 0]</li>
+<li>dog -&gt; [0, 0, 1]</li>
+<li>Issues: arbitrary, not context aware, only word level, problems in higher dimensional space<br />
+<img src="../img/onehotkey-img.png" alt="" style="width:400px;" /></li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-marpit-fragments="6" data-class="default invert" data-paginate="true" data-theme="uncover" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="18" data-class="default invert" data-paginate="true" data-theme="uncover" data-style="section {
     font-size: 175%;
 }
 footer {
@@ -522,15 +523,16 @@ footer {
 ;">
 <h1 id="cbow-model">CBOW Model</h1>
 <ul>
-<li data-marpit-fragment="1">Typically uses one-hot key encodings</li>
-<li data-marpit-fragment="2">Given context words, predicts the center word</li>
-<li data-marpit-fragment="3">EX: Predict the missing word: &quot;I am so hungry ____ now.&quot;</li>
-<li data-marpit-fragment="4">EX: Predict the missing word: &quot;He twisted his ankle during practice, so he was _____ on his way home.&quot;</li>
-<li data-marpit-fragment="5">EX: Predict the missing word: &quot;So he was ___ on&quot;</li>
-<li data-marpit-fragment="6">Issue: cannot handle long, complex texts</li>
+<li>Typically uses one-hot key encodings</li>
+<li>Given context words, predicts the center word</li>
+<li>EX: Predict the missing word: &quot;I am so hungry ____ now.&quot;</li>
+<li>EX: Predict the missing word: &quot;He twisted his ankle during practice, so he was _____ on his way home.&quot;</li>
+<li>EX: Predict the missing word: &quot;So he was ___ on&quot;</li>
+<li>Issue: cannot handle long, complex texts<br />
+<img src="../img/cbowmodel_img.png" alt="" style="width:400px;" /></li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-marpit-fragments="5" data-class="default invert" data-paginate="true" data-theme="uncover" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="19" data-class="default invert" data-paginate="true" data-theme="uncover" data-style="section {
     font-size: 175%;
 }
 footer {
@@ -545,14 +547,15 @@ footer {
 ;">
 <h1 id="skip-gram-model">Skip-Gram Model</h1>
 <ul>
-<li data-marpit-fragment="1">Also commonly uses one-hot key encodings</li>
-<li data-marpit-fragment="2">Given a word, predicts the context words</li>
-<li data-marpit-fragment="3">EX: Predict the two missing words given: &quot;____ hungry ____&quot;</li>
-<li data-marpit-fragment="4">Performs well on small datasets and better at handling rare words</li>
-<li data-marpit-fragment="5">Issues: takes longer to train and similar context issues as CBOW</li>
+<li>Also commonly uses one-hot key encodings</li>
+<li>Given a word, predicts the context words</li>
+<li>EX: Predict the two missing words given: &quot;____ hungry ____&quot;</li>
+<li>Performs well on small datasets and better at handling rare words</li>
+<li>Issues: takes longer to train and similar context issues as CBOW<br />
+<img src="../img/skipgrammodel_img.png" alt="" style="width:400px;" /></li>
 </ul>
 </section>
-</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-marpit-fragments="5" data-class="default invert" data-paginate="true" data-theme="uncover" data-style="section {
+</foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="20" data-class="default invert" data-paginate="true" data-theme="uncover" data-style="section {
     font-size: 175%;
 }
 footer {
@@ -567,11 +570,12 @@ footer {
 ;">
 <h1 id="long-short-term-memory-model">Long Short Term Memory Model</h1>
 <ul>
-<li data-marpit-fragment="1">Uses one-hot key encodings or more advanced embeddings (i.e. Word2Vec)</li>
-<li data-marpit-fragment="2">Recurrently handles sequential data</li>
-<li data-marpit-fragment="3">Maintains an internal memory over a sequence</li>
-<li data-marpit-fragment="4">EX: Predict the missing word: &quot;I am so hungry right ____&quot;</li>
-<li data-marpit-fragment="5">Issues: Unidirectional, computationally expensive, struggles with long-term dependencies</li>
+<li>Uses one-hot key encodings or more advanced embeddings (i.e. Word2Vec)</li>
+<li>Recurrently handles sequential data</li>
+<li>Maintains an internal memory over a sequence</li>
+<li>EX: Predict the missing word: &quot;I am so hungry right ____&quot;</li>
+<li>Issues: Unidirectional, computationally expensive, struggles with long-term dependencies<br />
+<img src="../img/lstm-img.png" alt="" style="width:400px;" /></li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-marpit-fragments="6" data-class="default invert" data-paginate="true" data-theme="uncover" data-style="section {
@@ -595,7 +599,8 @@ footer {
 <ul>
 <li data-marpit-fragment="4">Not conversational</li>
 <li data-marpit-fragment="5">Limited input size</li>
-<li data-marpit-fragment="6">Relatively poor performance</li>
+<li data-marpit-fragment="6">Relatively poor performance<br />
+<img src="../img/word2vec-img.jpg" alt="" style="width:400px;" /></li>
 </ul>
 </li>
 </ul>
@@ -618,7 +623,8 @@ footer {
 <li>Introduced by Vaswani et al. in 2017 in pivotal paper: Attention Is All You Need</li>
 <li>Bidirectional</li>
 <li>Multi-headed self-attention mechanism (can handle long-term dependencies)</li>
-<li>Parallelizable (computationally cheaper)</li>
+<li>Parallelizable (computationally cheaper)<br />
+<img src="../img/transformer-img.png" alt="" style="width:400px;" /></li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="23" data-class="default invert" data-paginate="true" data-theme="uncover" data-style="section {
@@ -638,7 +644,8 @@ footer {
 <ul>
 <li>Following the success of transformers in various NLP tasks, it is scaled and trained on larger datasets</li>
 <li>Google's BERT and OpenAI's GPT-2 were early LLMs</li>
-<li>GPT-3 along with reinforcement learning from human feedback (RLHF) leads to ChatGPT</li>
+<li>GPT-3 along with reinforcement learning from human feedback (RLHF) leads to ChatGPT<br />
+<img src="../img/bert-img.png" alt="" style="width:400px;" /></li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="24" data-class="default invert" data-paginate="true" data-theme="uncover" data-style="section {
@@ -658,7 +665,8 @@ footer {
 <ul>
 <li>Model Compression (i.e., DeepSeek distilled models)</li>
 <li>Multimodality</li>
-<li>Agents</li>
+<li>Agents<br />
+<img src="../img/deepseek-img.jpg" alt="" style="width:400px;" /></li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-class="invert" data-paginate="true" data-theme="uncover" data-style="section {
