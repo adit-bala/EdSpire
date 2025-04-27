@@ -138,6 +138,7 @@ _class: lead invert
     * Predict how a student’s SAT score rises with hours-studied
 - What are some problems with this?
     *  can only catch linear trends, not something like stock prices
+
 ![width:400px](../img/linear-regression.png)
 
 
@@ -159,6 +160,7 @@ _class: lead invert
 
 - What are some problems with this?
     *  need to guess `k`, sensitive to outliers
+
  ![width:400px](../img/k-means-clustering.png)
 
 ---
@@ -177,6 +179,7 @@ _class: lead invert
     * Email spam filters (spam or not spam)
 - What are some problems with this?
     * Too simple for complex decisions (can't handle "it depends" situations)
+
  ![width:400px](../img/perceptron.jpg)
 
 ---
@@ -321,7 +324,7 @@ _class: default invert
   * Not conversational
   * Limited input size
   * Relatively poor performance
-  
+
 ![width:400px](../img/word2vec-img.jpeg)
 
 ---
