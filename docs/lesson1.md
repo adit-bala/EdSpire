@@ -18,7 +18,7 @@ _footer: Slides available at https://edspire.aditbala.com/docs/lesson1
 _class: lead invert
 -->
 
-# <!--fit--> EdSpire Lecture 00
+# <!--fit--> EdSpire Lecture 01
 
 ###  Introduction to AI and Machine Learning
 
