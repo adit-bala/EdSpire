@@ -180,7 +180,7 @@ _class: lead invert
 - What are some problems with this?
     * Too simple for complex decisions (can't handle "it depends" situations)
 
- ![width:400px](../img/perceptron.jpg)
+ ![width:300px](../img/perceptron.jpg)
 
 ---
 
@@ -296,7 +296,7 @@ _class: default invert
 - Performs well on small datasets and better at handling rare words
 - Issues: takes longer to train and similar context issues as CBOW
   
-![width:400px](../img/skipgrammodel_img.png)
+![width:200px](../img/skipgrammodel_img.png)
 
 ---
 
