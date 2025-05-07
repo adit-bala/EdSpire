@@ -14,7 +14,7 @@ paginate: true
 
 <!--
 _paginate: false
-_footer: Slides available at https://edspire.aditbala.com/docs/lesson1 
+_footer: Slides available at https://edspire.aditbala.com/docs/lesson2 
 _class: lead invert
 -->
 
