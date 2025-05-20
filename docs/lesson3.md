@@ -288,27 +288,6 @@ cosine_similarity(jay, person2) # -0.37
 
 ---
 
-## Transformers
-
-- Input and Positional Encodings
-- Attention Mechanism
-- Multi-layer Perceptrons
-- Encoders & Decoders
-- Modern Variations (Modified encoders)
-
-
----
-
-## Transformers
-
-- Input and Positional Encodings
-- Attention Mechanism
-- Multi-layer Perceptrons
-- Encoders & Decoders
-- Modern Variations (Modified encoders)
-
----
-
 
 ## Feed Forward Neural Network
 
