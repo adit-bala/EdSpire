@@ -141,6 +141,164 @@ cosine_similarity(jay, person2) # -0.37
 
 ---
 
+## Applications of Word2Vec
+
+- Question: Think up some applications of this technology?
+- Question: What can this technology not do?
+
+---
+
+## Transformers
+
+- Introduced in 2017 paper: "Attention is all you need" by Vaswani et al.
+- A new architecture that performed well at NLP tasks (Ex: translation)
+- Proved efficacy of self-attention mechanism in NLP tasks
+- First introduced as an encoder-decoder model
+
+---
+
+## The Original Transformer Architecture: Tokenizing
+
+- Example input: "The brown fox jumps over the lazy dog"
+- Tokenize: <BOS> <The> < brown> < fox> < jumps> < over> < the> < lazy> < dog> <EOS>
+- Breaks up subwords and joins common pairings
+- EX: "Unhappy" -> <Un> <happy>
+- Tokens are converted into one-hot key embedding vectors
+
+---
+
+## The Original Transformer Architecture: Embeddings
+
+- A new embedding method: Embedding look up table
+- Each token has an index in the table corresponding to an embedding
+- This table starts off holding random embedding values
+- Embeddings are trained along with LLM
+
+---
+
+## The Original Transformer Architecture: Positional Encodings
+
+- A way to denote where in the prompt a word occurs
+- Example input: "The brown fox jumps over the lazy dog"
+- "fox" -> <4th word>
+- The positional encodings are generated via sin and cos functions
+- *Equations*
+- Generates a unique code for each position in a prompt
+- These encodings are added to the embeddings
+- [<BOS> + <1st word>] [<The> + <2nd word>] .... [<EOS> + <9th word>]
+
+
+---
+
+## The Original Transformer Architecture: Encoder-Decoder
+
+- Sequence of embeddings (word embedding + positional embedding) are passed into an encoder
+- Encoder converts each input embedding into another vector representation
+- Encoder's output is trained to consider context and overall meaning
+- Encoder's output is passed into the decoder
+- Decoder produces the final output
+
+---
+
+## The Original Transformer Architecture: Encoder-Decoder Training Example
+
+- Objective: Training for translating English to French
+- Sample data pair: "The cat is sitting" and "Le chat est assis"
+- *Diagram*
+
+
+---
+
+## The Original Transformer Architecture: Inference Example
+
+- Given "The cat is sitting", translate to French
+- *Diagram*
+
+
+---
+
+## Transformer Architecture: Components
+
+
+- Multi-Head Attention
+- Masked Attention
+- Feed Forward Neural Network
+
+---
+
+## Attention: Motivation
+- LLMs need an efficient and effective method to relate different parts of a prompt to each other
+- Example: "The boy was named Arthur."
+- Transformer encoder needs to consider "boy" when encoding "Arthur" and vice-versa
+- Self attention does exactly this
+
+---
+
+## Attention: Key, Value, Query
+
+- For each embedding vector in the input, we generate a key, value and query
+- These are also vectors, but they each encode specific information about the input vector
+- The intuition behind these vectors is not necessarily one-to-one with their function
+
+---
+
+## Attention: Intuition for the Key Vector
+
+
+- Describes the kind of information contained in the corresponding input vector
+- Analogy: the thumbnail for a YouTube video or list of items at a grocery store
+- Used to answer the question: Is the input vector relevant?
+
+---
+
+## Attention: Intuition for the Query Vector
+
+- Captures what info is needed to encode this input vector
+- Analogy: grocery list
+- Used to check whether an input vector has the necessary information
+
+---
+
+## Attention: KQV Example
+- Example sentence: "The cat is sitting"
+- We generate key, value, and query vectors for each word
+- "cat" key vector may encode info such as "subject", "noun", "singular"
+- "cat" value vector encodes info such as "animal", "small", "whiskers", etc.
+- "cat" query vector encodes info such as "object", "verb", "prey"
+
+---
+
+## Attention: Scaled-Dot Product Attention
+
+- Example sentence: "The cat is sitting"
+- Lets compute the attention for the word "cat"
+- scores = [key_{The} * query_{cat}, key_{cat} * query_{cat}, key_{is} * query_{cat}, key_{sitting} * query_{cat}]
+- The scores represent how relevant that word is to our word "cat"
+- These scores are normalized (forced between 0 and 1)
+- score_{The} * value_{The} + score_{cat} * value_{cat} + ... + score_{sitting} * value_{sitting}
+
+---
+
+## Masked Attention: Motivation
+
+- The decoder should only attend to previous words not future words since it is supposed to predict the future word
+- The decoder uses masked attention to only consider previous words
+- Given the encoding for "The cat is sitting" and having output "Le"
+- Attention output = score_{Le} * value_{Le}
+
+---
+
+## Transformers
+
+- Input and Positional Encodings
+- Attention Mechanism
+- Multi-layer Perceptrons
+- Encoders & Decoders
+- Modern Variations (Modified encoders)
+
+
+---
+
 ## Transformers
 
 - Input and Positional Encodings
@@ -151,8 +309,13 @@ cosine_similarity(jay, person2) # -0.37
 
 ---
 
-## LLM Inputs
 
-- We prompt LLMs like ChatGPT with regular text (i.e. "How many human years are in one dog year?")
-- The LLM transforms this text into a sequence of tokens (or embeddings)
-- Ex: "How's it going?" -> <"How"> + <'s> + <it> + <gog + <in>>
+## Feed Forward Neural Network
+
+
+---
+## Encoder-Only Model: BERT
+
+---
+###  Decoder-Only Model: GPT
+---
