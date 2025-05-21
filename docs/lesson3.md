@@ -199,7 +199,7 @@ cosine_similarity(jay, person2) # -0.37
 - Encoder's output is trained to consider context and overall meaning
 - Encoder's output is passed into the decoder
 - Decoder produces the final output
-- ![width:500px](../img/transformermodel.png)
+- ![width:200px](../img/transformermodel.png)
 ---
 
 ## The Original Transformer Architecture: Encoder-Decoder Training Example
