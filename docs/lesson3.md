@@ -69,7 +69,7 @@ _footer: source: https://jalammar.github.io/illustrated-word2vec/
 
 * ![width:600px](../img/embedding2.png)
 
-* Let's plot some more peeople's personality, who would replace Jay if he got hit by a bus
+* Let's plot some more people's personality, who would replace Jay if he got hit by a bus
 
 * ![width:600px](../img/embedding3.png)
 
