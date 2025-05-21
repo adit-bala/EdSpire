@@ -186,7 +186,7 @@ cosine_similarity(jay, person2) # -0.37
 - The positional encodings are generated via sin and cos functions
 - Generates a unique code for each position in a prompt
 - These encodings are added to the embeddings
-- [<BOS> + <1st word>] [<The> + <2nd word>] .... [<EOS> + <9th word>]
+- [BOS + <1st word>] [The + <2nd word>] .... [EOS + <9th word>]
 - ![width:500px](../img/posenc.png)
 
 
@@ -240,7 +240,7 @@ cosine_similarity(jay, person2) # -0.37
 - For each embedding vector in the input, we generate a key, value and query
 - These are also vectors, but they each encode specific information about the input vector
 - The intuition behind these vectors is not necessarily one-to-one with their function
-
+- ![width:500px](../img/kvq.png)
 ---
 
 ## Attention: Intuition for the Key Vector
@@ -277,7 +277,7 @@ cosine_similarity(jay, person2) # -0.37
 - The scores represent how relevant that word is to our word "cat"
 - These scores are normalized (forced between 0 and 1)
 - score_{The} * value_{The} + score_{cat} * value_{cat} + ... + score_{sitting} * value_{sitting}
-
+- ![width:500px](../img/transformermodel.png)
 ---
 
 ## Masked Attention: Motivation
@@ -295,7 +295,7 @@ cosine_similarity(jay, person2) # -0.37
 - Simple yet effective machine learning algorithm
 - Uses layers of many perceptrons to learn a function
 - Transformers use neural networks to transform the attention output into a more complex encoding or more simpler decoding
-
+- ![width:500px](../img/neural.png)
 ---
 ## Encoder-Only Model: BERT
 - Only uses an encoder transformer
