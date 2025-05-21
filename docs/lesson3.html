@@ -361,7 +361,7 @@ footer {
 <li>The positional encodings are generated via sin and cos functions</li>
 <li>Generates a unique code for each position in a prompt</li>
 <li>These encodings are added to the embeddings</li>
-<li>[&lt;BOS&gt; + &lt;1st word&gt;] [&lt;The&gt; + &lt;2nd word&gt;] .... [&lt;EOS&gt; + &lt;9th word&gt;]</li>
+<li>[BOS + &lt;1st word&gt;] [The + &lt;2nd word&gt;] .... [EOS + &lt;9th word&gt;]</li>
 <li><img src="../img/posenc.png" alt="" style="width:500px;" /></li>
 </ul>
 </section>
@@ -487,6 +487,7 @@ footer {
 <li>For each embedding vector in the input, we generate a key, value and query</li>
 <li>These are also vectors, but they each encode specific information about the input vector</li>
 <li>The intuition behind these vectors is not necessarily one-to-one with their function</li>
+<li><img src="../img/kvq.png" alt="" style="width:500px;" /></li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="21" data-class="invert" data-paginate="true" data-theme="uncover" data-style="section {
@@ -572,6 +573,7 @@ footer {
 <li>The scores represent how relevant that word is to our word &quot;cat&quot;</li>
 <li>These scores are normalized (forced between 0 and 1)</li>
 <li>score_{The} * value_{The} + score_{cat} * value_{cat} + ... + score_{sitting} * value_{sitting}</li>
+<li><img src="../img/transformermodel.png" alt="" style="width:500px;" /></li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="25" data-class="invert" data-paginate="true" data-theme="uncover" data-style="section {
@@ -613,6 +615,7 @@ footer {
 <li>Simple yet effective machine learning algorithm</li>
 <li>Uses layers of many perceptrons to learn a function</li>
 <li>Transformers use neural networks to transform the attention output into a more complex encoding or more simpler decoding</li>
+<li><img src="../img/neural.png" alt="" style="width:500px;" /></li>
 </ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-class="invert" data-paginate="true" data-theme="uncover" data-style="section {
