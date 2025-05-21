@@ -164,7 +164,7 @@ cosine_similarity(jay, person2) # -0.37
 - Example input: "The brown fox jumps over the lazy dog"
 - Tokenize: <BOS> <The> < brown> < fox> < jumps> < over> < the> < lazy> < dog> <EOS>
 - Breaks up subwords and joins common pairings
-- EX: "Unhappy" -> <Un> <happy>
+- EX: "Unhappy" -> Un + happy
 - Tokens are converted into one-hot key embedding vectors
 
 ---
@@ -273,10 +273,10 @@ cosine_similarity(jay, person2) # -0.37
 
 - Example sentence: "The cat is sitting"
 - Lets compute the attention for the word "cat"
-- scores = [key_{The} * query_{cat}, key_{cat} * query_{cat}, key_{is} * query_{cat}, key_{sitting} * query_{cat}]
+- scores = [$key_{The} * query_{cat}$, $key_{cat} * query_{cat}$, $key_{is} * query_{cat}$, $key_{sitting} * query_{cat}$]
 - The scores represent how relevant that word is to our word "cat"
 - These scores are normalized (forced between 0 and 1)
-- score_{The} * value_{The} + score_{cat} * value_{cat} + ... + score_{sitting} * value_{sitting}
+- $score_{The} * value_{The} + score_{cat} * value_{cat} + ... + score_{sitting} * value_{sitting}$
 - ![width:500px](../img/transformermodel.png)
 ---
 
@@ -285,7 +285,7 @@ cosine_similarity(jay, person2) # -0.37
 - The decoder should only attend to previous words not future words since it is supposed to predict the future word
 - The decoder uses masked attention to only consider previous words
 - Given the encoding for "The cat is sitting" and having output "Le"
-- Attention output = score_{Le} * value_{Le}
+- Attention output = $score_{Le} * value_{Le}$
 
 ---
 
