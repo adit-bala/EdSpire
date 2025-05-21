@@ -313,9 +313,9 @@ footer {
 <h2 id="the-original-transformer-architecture-tokenizing">The Original Transformer Architecture: Tokenizing</h2>
 <ul>
 <li>Example input: &quot;The brown fox jumps over the lazy dog&quot;</li>
-<li>Tokenize: &lt;BOS&gt; &lt;The&gt; &lt; brown&gt; &lt; fox&gt; &lt; jumps&gt; &lt; over&gt; &lt; the&gt; &lt; lazy&gt; &lt; dog&gt; &lt;EOS&gt;</li>
+<li>Tokenize: &lt; BOS&gt; &lt; The&gt; &lt; brown&gt; &lt; fox&gt; &lt; jumps&gt; &lt; over&gt; &lt; the&gt; &lt; lazy&gt; &lt; dog&gt; &lt;EOS&gt;</li>
 <li>Breaks up subwords and joins common pairings</li>
-<li>EX: &quot;Unhappy&quot; -&gt; Un + happy</li>
+<li>EX: &quot;Unhappy&quot; -&gt; &lt; Un&gt; + &lt; happy&gt;</li>
 <li>Tokens are converted into one-hot key embedding vectors</li>
 </ul>
 </section>
@@ -361,7 +361,7 @@ footer {
 <li>The positional encodings are generated via sin and cos functions</li>
 <li>Generates a unique code for each position in a prompt</li>
 <li>These encodings are added to the embeddings</li>
-<li>[BOS + &lt;1st word&gt;] [The + &lt;2nd word&gt;] .... [EOS + &lt;9th word&gt;]</li>
+<li>[&lt; BOS&gt; + &lt;1st word&gt;] [&lt; The&gt; + &lt;2nd word&gt;] .... [&lt; EOS&gt; + &lt;9th word&gt;]</li>
 <li><img src="../img/posenc.png" alt="" style="width:500px;" /></li>
 </ul>
 </section>
