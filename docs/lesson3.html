@@ -606,6 +606,11 @@ footer {
 }
 ;">
 <h2 id="feed-forward-neural-network">Feed Forward Neural Network</h2>
+<ul>
+<li>Simple yet effective machine learning algorithm</li>
+<li>Uses layers of many perceptrons to learn a function</li>
+<li>Transformers use neural networks to transform the attention output into a more complex encoding or more simpler decoding</li>
+</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="27" data-class="invert" data-paginate="true" data-theme="uncover" data-style="section {
     font-size: 175%;
@@ -621,6 +626,28 @@ footer {
 }
 ;">
 <h2 id="encoder-only-model-bert">Encoder-Only Model: BERT</h2>
+<ul>
+<li>Only uses an encoder transformer</li>
+<li>Bidirectional</li>
+<li>Trained for masked language modeling and next sentence prediction</li>
+<li>Masked Language Modeling Training:
+<ul>
+<li>Given &quot;The cat is sitting&quot;</li>
+<li>We mask words: &quot;The [MASK] is sitting&quot;</li>
+<li>The above sentence is converted into embeddings and passed into the transformer encoder</li>
+<li>12 or 24 encoders are stacked and produce a final output</li>
+<li>Output is passed through a neural network and then classified as one of the output tokens in BERT's vocabulary</li>
+<li>Output is expected to match the original sentence &quot;The cat is sitting&quot;</li>
+</ul>
+</li>
+<li>Inference:
+<ul>
+<li>Given some &quot;prompt&quot;</li>
+<li>Prompt is passed into model as before and one word is produced</li>
+<li>Word is appended to prompt and passed into model again</li>
+</ul>
+</li>
+</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="28" data-class="invert" data-paginate="true" data-theme="uncover" data-style="section {
     font-size: 175%;
@@ -636,6 +663,20 @@ footer {
 }
 ;">
 <h3 id="decoder-only-model-gpt">Decoder-Only Model: GPT</h3>
+<ul>
+<li>Uses something similar to the decoder transformer (minor differences)</li>
+<li>Unidirectional</li>
+<li>96 decoder blocks</li>
+<li>Training:
+<ul>
+<li>Given &quot;The cat is sitting&quot;</li>
+<li>Above sentence is converted into embeddings and passed into the transformer decoder</li>
+<li>Each output word is produced from only attending to previous words (masked attention)</li>
+<li>Output is expected to match the given sentence</li>
+</ul>
+</li>
+<li>Inference procedure is same as BERT</li>
+</ul>
 </section>
 </foreignObject></svg><svg data-marpit-svg="" viewBox="0 0 1280 720"><foreignObject width="1280" height="720"><section id="29" data-class="invert" data-paginate="true" data-theme="uncover" data-style="section {
     font-size: 175%;
