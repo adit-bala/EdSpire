@@ -273,7 +273,7 @@ cosine_similarity(jay, person2) # -0.37
 
 - Example sentence: "The cat is sitting"
 - Lets compute the attention for the word "cat"
-- scores = [$key_{The} * query_{cat}$, $key_{cat} * query_{cat}$, $key_{is} * query_{cat}$, $key_{sitting} * query_{cat}$]
+- scores = [ $key_{The} * query_{cat}$, $key_{cat} * query_{cat}$, $key_{is} * query_{cat}$, $key_{sitting} * query_{cat}$]
 - The scores represent how relevant that word is to our word "cat"
 - These scores are normalized (forced between 0 and 1)
 - $score_{The} * value_{The} + score_{cat} * value_{cat} + ... + score_{sitting} * value_{sitting}$
