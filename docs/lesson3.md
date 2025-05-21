@@ -204,7 +204,7 @@ cosine_similarity(jay, person2) # -0.37
 
 - Objective: Training for translating English to French
 - Sample data pair: "The cat is sitting" and "Le chat est assis"
-- *Diagram*
+- ![width:500px](../img/TrainingTrans.drawio.png)
 
 
 ---
@@ -212,8 +212,7 @@ cosine_similarity(jay, person2) # -0.37
 ## The Original Transformer Architecture: Inference Example
 
 - Given "The cat is sitting", translate to French
-- *Diagram*
-
+- ![width:500px](../img/infTrans.drawio.png)
 
 ---
 
