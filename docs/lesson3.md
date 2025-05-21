@@ -154,6 +154,8 @@ cosine_similarity(jay, person2) # -0.37
 - A new architecture that performed well at NLP tasks (Ex: translation)
 - Proved efficacy of self-attention mechanism in NLP tasks
 - First introduced as an encoder-decoder model
+- ![width:500px](../img/transformermodel.png)
+
 
 ---
 
@@ -182,10 +184,10 @@ cosine_similarity(jay, person2) # -0.37
 - Example input: "The brown fox jumps over the lazy dog"
 - "fox" -> <4th word>
 - The positional encodings are generated via sin and cos functions
-- *Equations*
 - Generates a unique code for each position in a prompt
 - These encodings are added to the embeddings
 - [<BOS> + <1st word>] [<The> + <2nd word>] .... [<EOS> + <9th word>]
+- ![width:500px](../img/posenc.png)
 
 
 ---
@@ -197,7 +199,7 @@ cosine_similarity(jay, person2) # -0.37
 - Encoder's output is trained to consider context and overall meaning
 - Encoder's output is passed into the decoder
 - Decoder produces the final output
-
+- ![width:500px](../img/transformermodel.png)
 ---
 
 ## The Original Transformer Architecture: Encoder-Decoder Training Example
@@ -222,7 +224,7 @@ cosine_similarity(jay, person2) # -0.37
 - Multi-Head Attention
 - Masked Attention
 - Feed Forward Neural Network
-
+- ![width:500px](../img/transformermodel.png)
 ---
 
 ## Attention: Motivation
