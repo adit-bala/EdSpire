@@ -291,10 +291,39 @@ cosine_similarity(jay, person2) # -0.37
 
 ## Feed Forward Neural Network
 
+- Simple yet effective machine learning algorithm
+- Uses layers of many perceptrons to learn a function
+- Transformers use neural networks to transform the attention output into a more complex encoding or more simpler decoding
 
 ---
 ## Encoder-Only Model: BERT
+- Only uses an encoder transformer
+- Bidirectional
+- Trained for masked language modeling and next sentence prediction
+- Masked Language Modeling Training:
+  - Given "The cat is sitting"
+  - We mask words: "The [MASK] is sitting"
+  - The above sentence is converted into embeddings and passed into the transformer encoder
+  - 12 or 24 encoders are stacked and produce a final output
+  - Output is passed through a neural network and then classified as one of the output tokens in BERT's vocabulary
+  - Output is expected to match the original sentence "The cat is sitting"
+- Inference:
+  - Given some "prompt"
+  - Prompt is passed into model as before and one word is produced
+  - Word is appended to prompt and passed into model again
+
 
 ---
 ###  Decoder-Only Model: GPT
+- Uses something similar to the decoder transformer (minor differences)
+- Unidirectional
+- 96 decoder blocks
+- Training:
+  - Given "The cat is sitting"
+  - Above sentence is converted into embeddings and passed into the transformer decoder
+  - Each output word is produced from only attending to previous words (masked attention)
+  - Output is expected to match the given sentence
+- Inference procedure is same as BERT
+
+
 ---
