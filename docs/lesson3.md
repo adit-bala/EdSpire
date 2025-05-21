@@ -212,7 +212,7 @@ cosine_similarity(jay, person2) # -0.37
 ## The Original Transformer Architecture: Inference Example
 
 - Given "The cat is sitting", translate to French
-- ![width:500px](../img/infTrans.drawio.png)
+- ![width:500px](../img/InfTrans.drawio.png)
 
 ---
 
