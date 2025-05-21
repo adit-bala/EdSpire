@@ -162,9 +162,9 @@ cosine_similarity(jay, person2) # -0.37
 ## The Original Transformer Architecture: Tokenizing
 
 - Example input: "The brown fox jumps over the lazy dog"
-- Tokenize: <BOS> <The> < brown> < fox> < jumps> < over> < the> < lazy> < dog> <EOS>
+- Tokenize: < BOS> < The> < brown> < fox> < jumps> < over> < the> < lazy> < dog> <EOS>
 - Breaks up subwords and joins common pairings
-- EX: "Unhappy" -> Un + happy
+- EX: "Unhappy" -> < Un> + < happy>
 - Tokens are converted into one-hot key embedding vectors
 
 ---
@@ -186,7 +186,7 @@ cosine_similarity(jay, person2) # -0.37
 - The positional encodings are generated via sin and cos functions
 - Generates a unique code for each position in a prompt
 - These encodings are added to the embeddings
-- [BOS + <1st word>] [The + <2nd word>] .... [EOS + <9th word>]
+- [< BOS> + <1st word>] [< The> + <2nd word>] .... [< EOS> + <9th word>]
 - ![width:500px](../img/posenc.png)
 
 
