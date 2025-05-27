@@ -19,5 +19,9 @@ _class: lead invert
 -->
 
 # <!--fit--> EdSpire Lecture 04
+---
+## Retrieval Augmented Generation (RAG)
+- Enables LLMs to use external documents and images
+- Similar to how you may look in a book or a website to find an answer to a question
 
-
+---
