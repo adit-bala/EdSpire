@@ -41,7 +41,7 @@ _class: lead invert
 - Select top document
 - Augment prompt with content of top document
 - Pass augmented prompt to LLM
-- ![width:500px](../img/rag_diag.png)
+- ![width:200px](../img/rag_diag.png)
 ---
 ## Processing Query
 - Example query: "What is the weather in Berkeley, CA?"
@@ -71,7 +71,7 @@ _class: lead invert
 - Convert the query into a vector embedding using an LLM
 - Use Cosine similarity or a trained language model to score vector similarity between document and query vectors
 - Select document with the highest score
-- ![width:500px](../img/vector_db.jpeg)
+- ![width:200px](../img/vector_db.jpg)
 ---
 ## Augmenting the Prompt
 - Just add the document to the prompt
