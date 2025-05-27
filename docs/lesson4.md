@@ -79,4 +79,23 @@ _class: lead invert
 
 ---
 
+## Choosing your projects
+
+- As homework, choose an area of study that interests you, like sports, fitness, langauge
+- Think of ML Applications or what you want to build
+- Think about how much guidance you want from us?
+  - Do you want to build everything yourself with help from us?
+  - Do you want us to guide you through the entire process?
+  - Something in between?
+- Email aditbala@berkeley.edu with your project idea and how much guidance you want
+
+---
+
+#### Some Ideas
+
+- Music Recommender System using Spotify
+- [AI Holiday Family Letter](https://family-chatbot.vercel.app/)
+- LLM Translation App
+
+
 
