@@ -83,7 +83,7 @@ _class: lead invert
 
 ## End-To-End Example
 
-- Given query: "Can cat's see in the dark?" 
+- Given query: "Can cat's see in the dark?"  $key_{The} * query_{cat}$
 - Knowledge database: ![width:200px](../img/vectordb_animals.png)
 * Step 1: Remove stop words
 	* "cat's see dark?"
