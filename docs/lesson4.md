@@ -87,7 +87,7 @@ _class: lead invert
 - Knowledge database: ![width:200px](../img/vectordb_animals.png)
 * Step 1: Remove stop words
 	* "cat's see dark?"
- * Step 2: Generate vector embedding: $v_{query}$
+ * Step 2: Generate vector embedding: $`v_{query}`$
  * Step 3: Compute cos similarity between query vector and database document vectors
  	* Cos Sim w/ Doc about cats, Cos Sim w/ Doc about dogs, ...    
  * Step 4: Select document with highest similarity score
