@@ -1,6 +1,5 @@
 ---
 marp: true
-math: katex
 theme: uncover
 class: invert
 style: |
@@ -84,11 +83,11 @@ _class: lead invert
 
 ## End-To-End Example
 
-- Given query: "Can cat's see in the dark?"  `$key_{The} * query_{cat}$`
+- Given query: "Can cat's see in the dark?"
 - Knowledge database: ![width:200px](../img/vectordb_animals.png)
 * Step 1: Remove stop words
 	* "cat's see dark?"
- * Step 2: Generate vector embedding: $v_{query}$
+ * Step 2: Generate vector embedding: "cat's see dark?" -> vector embedding
  * Step 3: Compute cos similarity between query vector and database document vectors
  	* Cos Sim w/ Doc about cats, Cos Sim w/ Doc about dogs, ...    
  * Step 4: Select document with highest similarity score
