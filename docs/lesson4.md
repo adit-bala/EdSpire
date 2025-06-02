@@ -78,6 +78,8 @@ _class: lead invert
 - EX: "Answer this question: What is the weather in Berkeely, CA?
 	Given the following information: [Insert Document]"
 - Then input this into an LLM and we're done!
+- scores = [ $key_{The} * query_{cat}$, $key_{cat} * query_{cat}$, $key_{is} * query_{cat}$, $key_{sitting} * query_{cat}$]
+
 
 ---
 
