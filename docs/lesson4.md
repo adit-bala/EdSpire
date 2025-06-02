@@ -78,14 +78,12 @@ _class: lead invert
 - EX: "Answer this question: What is the weather in Berkeely, CA?
 	Given the following information: [Insert Document]"
 - Then input this into an LLM and we're done!
-- scores = [ $key_{The} * query_{cat}$, $key_{cat} * query_{cat}$, $key_{is} * query_{cat}$, $key_{sitting} * query_{cat}$]
-
 
 ---
 
 ## End-To-End Example
 
-- Given query: "Can cat's see in the dark?"  $key_{The} * query_{cat}$
+- Given query: "Can cat's see in the dark?"  `$key_{The} * query_{cat}$`
 - Knowledge database: ![width:200px](../img/vectordb_animals.png)
 * Step 1: Remove stop words
 	* "cat's see dark?"
