@@ -81,6 +81,21 @@ _class: lead invert
 
 ---
 
+##End-To-End Example
+
+- Given query: "Can cat's see in the dark?"
+- ![width:200px](../img/vectordb_animals.png)
+* Step 1: Remove stop words
+	* "cat's see dark?"
+ * Step 2: Generate vector embedding: $$v_{query}$$
+ * Step 3: Compute cos similarity between query vector and database document vectors
+ 	* Cos Sim w/ Doc about cats, Cos Sim w/ Doc about dogs, ...    
+ * Step 4: Select document with highest similarity score
+ * Step 5: Augment query with selected document
+ 	* Can cat's see in the dark?
+          [ Document about cats ]
+---
+
 ## Choosing your projects
 
 - As homework, choose an area of study that interests you, like sports, fitness, langauge
