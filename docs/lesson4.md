@@ -1,5 +1,6 @@
 ---
 marp: true
+math: katex
 theme: uncover
 class: invert
 style: |
