@@ -92,8 +92,8 @@ _class: lead invert
  	* Cos Sim w/ Doc about cats, Cos Sim w/ Doc about dogs, ...    
  * Step 4: Select document with highest similarity score
  * Step 5: Augment query with selected document
- 	* Can cat's see in the dark?
-          [ Document about cats ]
+ 	* Can cat's see in the dark? </br>
+          Use the following information: [ Document about cats ]
 ---
 
 ## Choosing your projects
